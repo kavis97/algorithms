@@ -1,11 +1,9 @@
 package com.sort.bubble;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class BubbleSortTest {
-
     BubbleSort subject;
     int[] unsortedArray;
     int[] sortedArray;
@@ -30,8 +28,8 @@ public class BubbleSortTest {
         givenUnsortedArray(100, 89, 75, 64, 15);
         whenSorted();
         thenExpect(15,64,75,89,100);
-
     }
+
     @Test
     public void testWithNegatives() {
         givenUnsortedArray(-10,2,-8,6,-7,0, 3);
@@ -43,6 +41,7 @@ public class BubbleSortTest {
         whenSorted();
         thenExpect(6,3,2,0,-7,-8,-10);
     }
+
     @Test
     public void descendingTest() {
         givenUnsortedArray(10,2,8,6,7,3);

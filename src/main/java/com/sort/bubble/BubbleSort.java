@@ -18,8 +18,9 @@ public class BubbleSort {
         };
         abstract boolean validate(int index, int[] array);
     }
-    int[] array;
-    ORDER order;
+
+    private int[] array;
+    private ORDER order;
 
     BubbleSort(int[] array, ORDER order) {
         this.array = array;
@@ -40,6 +41,4 @@ public class BubbleSort {
         }
         return array;
     }
-
-
 }
